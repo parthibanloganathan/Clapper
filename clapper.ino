@@ -58,7 +58,7 @@ void loop()
     count++;
     clap_flag = 1;
   }
-  else if(digitalRead(in) == 0 && clap_flag == 1)
+  if(digitalRead(in) == 0 && clap_flag == 1)
   {
     clap_flag = 0;
   }
